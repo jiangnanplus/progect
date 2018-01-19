@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="siteCtrl">
+
+    <ul>
+        <li ng-repeat="x in names">
+            {{ x.Name + ', ' + x.Country + ', ' + x.Url }}
+        </li>
+    </ul>
+
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.config(['$locationProvider', function ($locationProvider) {
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
+    }]);
+    app.controller('siteCtrl', function ($scope, $http, $location) {
+        var $absurl = $location.absUrl();
+        var $suburl = getSubString($absurl, "?");
+        var $newurl = "http://ss-back.sandbox.100mzhan.com.cn/hello" + $suburl;
+//        console.log($newurl);
+        $http.get($newurl)
+            .then(function (response) {
+                $scope.names = response.data.sites;
+            });
+    });
+    function isContains(str, substr) {
+        return str.indexOf(substr) >= 0;
+    }
+    function getSubString(str, substr) {
+        $pos = str.indexOf(substr);
+        $sub = str.substring($pos);
+//        console.log($sub);
+        return $sub;
+    }
+</script>
+
+</body>
+</html>

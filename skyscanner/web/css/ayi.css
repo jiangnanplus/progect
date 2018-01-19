@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*表单元素*/
+.input_text{ box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box; font-size:.14rem;}
+
+/*员工登录*/
+.login_box .form_item{ position:relative; }
+.login_box .form_item .icon_ebn{ position:absolute; left:.1rem; top:.17rem;}
+.login_box .form_item .input_text{ width:100%;border-bottom:1px #dbdbdb solid; height:.5rem; line-height:.3rem; padding:.1rem .1rem .1rem .3rem;}
+.login_box .form_item .input_text:focus{ border-bottom-color:#aaa;}
+.login_box .btn_submit{ width:100%;}
+
+/*员工中心*/
+.page-ayi-my{ background:#f8f8f8;}
+.part-01{ background:#fff;}
+.my-head{ background:#ffc35c; color:#fff;}
+.my-head img{ width:0.8rem;}
+.my-head .my-head-id .icon_ebn{ vertical-align:middle; margin-top:-.03rem;}
+.headbottom{ background:url(../images/bg_yellowhu.png) no-repeat center; background-size:100% 100%; height:.2rem;}
+.part-01 .ul_view{ border-top:0;}
+.part-01 .jiugongge{ background:#fff;}
+.part-01 .jiugongge .item{ float:left; width:33.3%; padding-top:.1rem;padding-bottom:.1rem; border-right:1px #dbdbdb solid; border-bottom:1px #dbdbdb solid;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box; line-height:.20rem;}
+.part-01 .jiugongge .item .pic{}
+.part-01 .jiugongge .item .pic .icon_ebn{ width:.24rem; height:.24rem;}
+
+.ul_view.list_shouyi .ul_view_cell .item{ padding-left:.3rem; position:relative;}
+.ul_view.list_shouyi .ul_view_cell .item>.icon_ebn{ position:absolute; left:.1rem; top:.13rem;}
+
+/*员工订单*/
+.page-ayi-my-order{ background:#f8f8f8;}
+.part-01 .tab{ line-height:.4rem; border-bottom:1px #dbdbdb solid;}
+.part-01 .tab li{ float:left; *display:inline;*zoom:1;}
+.part-01 .tab li{ width:25%; text-align:center;}
+.part-01 .tab li a{ display:block; height:.4rem;}
+.part-01 .tab li a.on{ border-bottom:1px #1d95e8 solid; color:#1d95e8;}
+
+.order_item .btns{ font-size:0; margin:0 -.05rem; padding-top:.1rem;}
+.order_item .btns li{ float:left; *display:inline; width:50%;}
+.order_item .btns .btn{ margin:0 .05rem; display:block; font-size:.14rem; box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+.order_item .beizhu_box{  padding-left:.2rem; font-size:.13rem; line-height:.20rem;}
+.order_item .beizhu_box p{ padding:.05rem; background:#efefef;}
+.page-ayi-my-order .bottombar{ height:.6rem;}
+.page-ayi-my-order .bottombar li{ width:100%;}
+.page-ayi-my-order .bottombar li a{ padding:0; margin:.1rem; color:#fff; font-size:.16rem;}
+
+/*员工评价*/
+.pingjia_item .title .icon_ebn{ vertical-align:middle; margin-top:-.03rem;}
+.pingjia_item .text_box{ padding-left:.2rem; font-size:.13rem; line-height:.20rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

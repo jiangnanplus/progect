@@ -1,0 +1,6 @@
+<!–[if IE 6]>
+<script type=”text/javascript” src=”下载下来的JS路径”></script>
+<script>
+DD_belatedPNG.fix(‘CSS选择器, 应用类型’);
+</script>
+<![endif]–>
